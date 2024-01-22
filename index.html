@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Advertisement Page</title>
+  <link rel="shortcut icon" href="https://tse2.mm.bing.net/th?id=OIP.f5QQL0qejFUh0UI6vBWsewHaEo&pid=Api&P=0&h=180" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    #loading-page {
+      display: none;
+    }
+
+    #freelancers-page {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="heading">Animated and Attractive Websites</h1>
+    <p class="description">We offer a range of services including ecommerce website making, personal website and blog creation, and hosting and domain setting. Our fees start at just $3k.</p>
+    <button class="cta-button" onclick="loadFreelancersPage()">Learn More</button>
+  </div>
+
+  <div id="loading-page">
+    <h1>Loading...</h1>
+  </div>
+
+  <div id="freelancers-page">
+    <iframe src="index2.html" width="100%" height="500px" frameborder="0"></iframe>
+  </div>
+
+  <script>
+    function loadFreelancersPage() {
+      document.getElementById('loading-page').style.display = 'block';
+      setTimeout(function() {
+        document.getElementById('loading-page').style.display = 'none';
+        document.getElementById('freelancers-page').style.display = 'block';
+      }, 2000);
+    }
+  </script>
+</body>
+</html>
